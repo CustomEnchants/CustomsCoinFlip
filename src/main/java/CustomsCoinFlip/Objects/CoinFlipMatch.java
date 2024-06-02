@@ -196,7 +196,9 @@ public class CoinFlipMatch {
             if (!userDAO.hasNotificationsEnabled()) {
                 return;
             }
-            messages.forEach(player::sendMessage);
+            for(String string : messages){
+                player.sendMessage(string);
+            }
         });
         messages.clear();
     }

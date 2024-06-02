@@ -60,10 +60,11 @@
             <version>LATEST</version>
         </dependency>
         <dependency>
-            <groupId>com.github.decentsoftware-eu</groupId>
-            <artifactId>decentholograms</artifactId>
+            <artifactId>DecentHolograms</artifactId>
+            <groupId>DecentHolograms</groupId>
+            <scope>system</scope>
+            <systemPath>G:/Development - Plugins/DecentHolograms-2.8.8.jar</systemPath>
             <version>LATEST</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 
