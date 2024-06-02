@@ -36,7 +36,7 @@
             <artifactId>Spigot1.8.8</artifactId>
             <groupId>Spigot1.8.8</groupId>
             <scope>system</scope>
-            <systemPath>G:/My Drive/Development - ServerJars/spigot-1.8.8.jar</systemPath>
+            <systemPath>G:/Development - ServerJars/spigot-1.8.8.jar</systemPath>
             <version>LATEST</version>
         </dependency>
         <dependency>
@@ -49,14 +49,14 @@
             <artifactId>Vault</artifactId>
             <groupId>Vault</groupId>
             <scope>system</scope>
-            <systemPath>G:/My Drive/Development - Plugins/Vault.jar</systemPath>
+            <systemPath>G:/Development - Plugins/Vault.jar</systemPath>
             <version>LATEST</version>
         </dependency>
         <dependency>
             <artifactId>HolographicDisplays</artifactId>
             <groupId>HolographicDisplays</groupId>
             <scope>system</scope>
-            <systemPath>G:/My Drive/Development - Plugins/HolographicDisplays 2.2.6.jar</systemPath>
+            <systemPath>G:/Development - Plugins/HolographicDisplays 2.2.6.jar</systemPath>
             <version>LATEST</version>
         </dependency>
         <dependency>

@@ -47,4 +47,8 @@ public abstract class SubCommand {
         return ChatColor.translateAlternateColorCodes('&', input);
     }
 
+    public boolean hasAccess(CommandSender cs){
+        return getPermission().isEmpty() || cs.hasPermission(getPermission());
+    }
+
 }

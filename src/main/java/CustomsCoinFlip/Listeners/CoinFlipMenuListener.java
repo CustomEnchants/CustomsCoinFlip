@@ -9,6 +9,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 
+import java.util.Optional;
+
 import static CustomsCoinFlip.Enums.Side.HEADS;
 import static CustomsCoinFlip.Enums.Side.TAILS;
 
@@ -42,10 +44,12 @@ public class CoinFlipMenuListener implements Listener {
             return;
         }
         event.setCancelled(true);
-        if(instance.getCoinFlipMatches().stream().noneMatch(coinFlipMatch -> coinFlipMatch.getStarterItemStack().isSimilar(event.getCurrentItem()))){
+        Optional<CoinFlipMatch> coinFlipMatchOptional = instance.getCoinFlipMatches().stream().filter(coinFlipMatch -> coinFlipMatch.getStarterItemStack().isSimilar(event.getCurrentItem())).findFirst();
+        if(!coinFlipMatchOptional.isPresent()){
             return;
         }
-        CoinFlipMatch coinFlipMatch = instance.getCoinFlipMatches().stream().filter(coinFlipMatch1 -> coinFlipMatch1.getStarterItemStack().isSimilar(event.getCurrentItem())).findFirst().orElse(null);
+
+        CoinFlipMatch coinFlipMatch = coinFlipMatchOptional.get();
         Player player = (Player) event.getWhoClicked();
         if(coinFlipMatch.getStarter().toString().equalsIgnoreCase(player.getUniqueId().toString())){
             instance.getFileUtil().coinFlipMenuCanNotCoinFlipAgainstSelf.forEach(player::sendMessage);
