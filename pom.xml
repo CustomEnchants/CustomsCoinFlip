@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>CustomsCoinFlip</groupId>
+    <artifactId>CustomsCoinFlip</artifactId>
+    <version>4.0.0</version>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <artifactId>Spigot1.8.8</artifactId>
+            <groupId>Spigot1.8.8</groupId>
+            <scope>system</scope>
+            <systemPath>G:/My Drive/Development - ServerJars/spigot-1.8.8.jar</systemPath>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>LATEST</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <artifactId>Vault</artifactId>
+            <groupId>Vault</groupId>
+            <scope>system</scope>
+            <systemPath>G:/My Drive/Development - Plugins/Vault.jar</systemPath>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <artifactId>HolographicDisplays</artifactId>
+            <groupId>HolographicDisplays</groupId>
+            <scope>system</scope>
+            <systemPath>G:/My Drive/Development - Plugins/HolographicDisplays 2.2.6.jar</systemPath>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.decentsoftware-eu</groupId>
+            <artifactId>decentholograms</artifactId>
+            <version>LATEST</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+
+</project>

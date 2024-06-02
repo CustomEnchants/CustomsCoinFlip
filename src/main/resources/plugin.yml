@@ -1,0 +1,17 @@
+name: CustomsCoinFlip
+version: ${project.version}
+author: CustomEnchants
+authors:
+  - CustomEnchants
+  - SoFocused
+main: CustomsCoinFlip.CustomsCoinFlipPlugin
+depend:
+  - Vault
+softdepend:
+  - PlaceholderAPI
+  - HolographicDisplays
+  - DecentHolograms
+commands:
+  CoinFlip:
+    description: Main coinflip command
+    aliases: [cf,ecoinflip,ecf]
